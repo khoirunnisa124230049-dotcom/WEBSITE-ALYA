@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendidikan - Alya</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0812;
+    color: #f5eaf7;
+    line-height: 1.8;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #160b20, #32113f, #55143f);
+    text-align: center;
+    padding: 55px 20px;
+    color: white;
+    border-bottom: 1px solid #8e3c91;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    font-weight: normal;
+    color: #f4b6dc;
+    text-shadow: 0 0 15px #b44b9b66;
+}
+
+header p {
+    margin-top: 8px;
+    color: #d8a8d9;
+}
+
+/* NAVIGASI */
+nav {
+    background: #130c18;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 15px #00000080;
+    border-bottom: 1px solid #32183d;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e5c7e8;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f28bc5;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 0;
+}
+
+/* JUDUL */
+.judul {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.judul h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #e58bc2;
+    text-shadow: 0 0 12px #b54b9b55;
+}
+
+.judul p {
+    color: #bda8c2;
+}
+
+/* PENDIDIKAN */
+.pendidikan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.pendidikan-card {
+    background: linear-gradient(135deg, #17101d, #211127);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px #00000070;
+    border: 1px solid #54275d;
+    transition: 0.3s;
+}
+
+.pendidikan-card:hover {
+    transform: translateY(-6px);
+    border-color: #b84d9c;
+    box-shadow: 0 8px 25px #9b3e8950;
+}
+
+.pendidikan-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.keterangan {
+    padding: 20px;
+}
+
+.keterangan h3 {
+    color: #ed91c9;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+
+.keterangan p {
+    color: #b9a7bd;
+    font-size: 15px;
+}
+
+/* TOMBOL */
+.kembali {
+    text-align: center;
+    margin: 45px 0 10px;
+}
+
+.tombol {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #8d3b82, #c44d91);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px #a33d8650;
+}
+
+.tombol:hover {
+    background: linear-gradient(135deg, #b84b9d, #e56aa9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px #d84c9a70;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #120a17;
+    color: #a991ab;
+    border-top: 1px solid #35183e;
+}
+
+footer p:first-child {
+    color: #d982b7;
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+
+    .pendidikan {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .pendidikan-card img {
+        height: 230px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pendidikan Saya</h1>
+    <p>Perjalanan belajar dan berkembang untuk meraih cita-cita ♡</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profile.html">Profil</a>
+    <a href="latarbelakang.html">Latar Belakang</a>
+    <a href="keluarga.html">Keluarga</a>
+    <a href="pendidikan.html">Pendidikan</a>
+</nav>
+
+<div class="container">
+
+    <div class="judul">
+        <h2>Jenjang Pendidikan</h2>
+        <p>
+            Perjalanan pendidikan saya dari sekolah dasar
+            hingga perguruan tinggi.
+        </p>
+    </div>
+
+    <div class="pendidikan">
+
+        <!-- SD -->
+        <div class="pendidikan-card">
+            <img src="sd.jpg" alt="Foto SDN 1 Palapa">
+
+            <div class="keterangan">
+                <h3>SDN 1 Palapa</h3>
+                <p>
+                    Sekolah Dasar Negeri 1 Palapa, tempat saya
+                    memulai perjalanan pendidikan dan mengenal
+                    berbagai hal untuk pertama kalinya.
+                </p>
+            </div>
+        </div>
+
+        <!-- SMP -->
+        <div class="pendidikan-card">
+            <img src="smp.jpg" alt="Foto SMPN 25 Bandar Lampung">
+
+            <div class="keterangan">
+                <h3>SMPN 25 Bandar Lampung</h3>
+                <p>
+                    Masa pendidikan yang memberikan banyak
+                    pengalaman, pembelajaran, dan kesempatan
+                    untuk terus berkembang.
+                </p>
+            </div>
+        </div>
+
+        <!-- SMA -->
+        <div class="pendidikan-card">
+            <img src="sma7.jpg" alt="Foto SMAN 7 Bandar Lampung">
+
+            <div class="keterangan">
+                <h3>SMAN 7 Bandar Lampung</h3>
+                <p>
+                    Tahap pendidikan yang menjadi bekal untuk
+                    melanjutkan perjalanan ke jenjang pendidikan
+                    yang lebih tinggi.
+                </p>
+            </div>
+        </div>
+
+        <!-- ITERA -->
+        <div class="pendidikan-card">
+            <img src="ITERA.GEOMATIKA.JPG"
+                 alt="Foto Institut Teknologi Sumatera">
+
+            <div class="keterangan">
+                <h3>Institut Teknologi Sumatera</h3>
+                <p>
+                    Program Studi Geomatika. Saat ini saya sedang
+                    melanjutkan pendidikan untuk mengembangkan
+                    ilmu, pengalaman, dan meraih cita-cita saya.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- KEMBALI KE LATAR BELAKANG -->
+    <div class="kembali">
+        <a href="latarbelakang.html" class="tombol">
+            ← Kembali ke Latar Belakang
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <p>Terus belajar, berkembang, dan melangkah ♡</p>
+    <p>©️ 2026 Khoirunnisa Alya Widianti</p>
+</footer>
+
+</body>
+</html>

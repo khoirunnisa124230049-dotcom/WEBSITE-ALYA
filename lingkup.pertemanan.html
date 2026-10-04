@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lingkup Pertemanan - Alya</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0812;
+    color: #f5eaf7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #160b20, #32113f, #55143f);
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid #8e3c91;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: #f4b6dc;
+}
+
+/* NAVIGASI */
+nav {
+    background: #130c18;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #32183d;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e5c7e8;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f28bc5;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/* GALERI */
+.pertemanan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* FOTO BULAT */
+.teman-bulat {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #a94d91;
+    background: #17101d;
+    box-shadow: 0 5px 20px #00000070;
+    transition: 0.3s;
+}
+
+.teman-bulat:hover {
+    transform: scale(1.05);
+    border-color: #ed91c9;
+    box-shadow: 0 8px 25px #9b3e8950;
+}
+
+.teman-bulat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* FOTO RIZKA DI TENGAH */
+.foto-terakhir {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+/* TOMBOL KEMBALI */
+.kembali {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.tombol {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #8d3b82, #c44d91);
+    color: white;
+    padding: 11px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px #a33d8650;
+}
+
+.tombol:hover {
+    background: linear-gradient(135deg, #b84b9d, #e56aa9);
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #120a17;
+    color: #d982b7;
+    border-top: 1px solid #35183e;
+}
+
+/* TABLET */
+@media (max-width: 750px) {
+
+    .pertemanan {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .teman-bulat {
+        width: 165px;
+        height: 165px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+}
+
+/* HP */
+@media (max-width: 480px) {
+
+    .pertemanan {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .teman-bulat {
+        width: 185px;
+        height: 185px;
+    }
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Lingkup Pertemanan Saya ♡</h1>
+</header>
+
+<!-- NAVIGASI -->
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profile.html">Profil</a>
+    <a href="latarbelakang.html">Latar Belakang</a>
+    <a href="keluarga.html">Keluarga</a>
+    <a href="pendidikan.html">Pendidikan</a>
+    <a href="lingkup.pertemanan.html">Pertemanan</a>
+</nav>
+
+<!-- ISI -->
+<div class="container">
+
+    <div class="pertemanan">
+
+        <!-- TEMAN 2 -->
+        <div class="teman-bulat">
+            <img src="temen2.jpg" alt="Foto teman">
+        </div>
+
+        <!-- TEMAN 3 -->
+        <div class="teman-bulat">
+            <img src="temen3.jpg" alt="Foto teman">
+        </div>
+
+        <!-- TEMAN 4 -->
+        <div class="teman-bulat">
+            <img src="temen4.jpg" alt="Foto teman">
+        </div>
+
+        <!-- TEMAN 5 -->
+        <div class="teman-bulat">
+            <img src="temen5.jpg" alt="Foto teman">
+        </div>
+
+        <!-- TEMAN 6 -->
+        <div class="teman-bulat">
+            <img src="temen6.jpg" alt="Foto teman">
+        </div>
+
+        <!-- TEMAN 7 -->
+        <div class="teman-bulat">
+            <img src="temen7.jpg" alt="Foto teman">
+        </div>
+
+        <!-- RIZKA -->
+        <div class="teman-bulat foto-terakhir">
+            <img src="rizka2.jpg" alt="Foto Rizka">
+        </div>
+
+    </div>
+
+    <!-- KEMBALI KE LATAR BELAKANG -->
+    <div class="kembali">
+        <a href="latarbelakang.html" class="tombol">
+            ← Kembali ke Latar Belakang
+        </a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    ©️ 2026 Khoirunnisa Alya Widianti ♡
+</footer>
+
+</body>
+</html>

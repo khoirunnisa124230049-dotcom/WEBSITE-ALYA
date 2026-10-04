@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keluarga Saya - Alya</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0812;
+    color: #f5eaf7;
+    line-height: 1.8;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #160b20, #32113f, #55143f);
+    text-align: center;
+    padding: 55px 20px;
+    color: white;
+    border-bottom: 1px solid #8e3c91;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    font-weight: normal;
+    color: #f4b6dc;
+    text-shadow: 0 0 15px #b44b9b66;
+}
+
+header p {
+    margin-top: 8px;
+    color: #d8a8d9;
+}
+
+/* NAVIGASI */
+nav {
+    background: #130c18;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 15px #00000080;
+    border-bottom: 1px solid #32183d;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e5c7e8;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f28bc5;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 0;
+}
+
+/* JUDUL */
+.judul {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.judul h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #e58bc2;
+    text-shadow: 0 0 12px #b54b9b55;
+}
+
+.judul p {
+    color: #bda8c2;
+}
+
+/* ORANG TUA */
+.orangtua {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(135deg, #17101d, #211127);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px #00000070;
+    margin-bottom: 55px;
+    border: 1px solid #54275d;
+}
+
+.orangtua img {
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #a64b91;
+}
+
+.orangtua h3 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    color: #ed91c9;
+    margin-bottom: 10px;
+}
+
+.orangtua p {
+    color: #c7b3ca;
+}
+
+/* GALERI */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.foto-card {
+    background: #17101d;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000070;
+    transition: 0.3s;
+    border: 1px solid #3d2148;
+}
+
+.foto-card:hover {
+    transform: translateY(-6px);
+    border-color: #b84d9c;
+    box-shadow: 0 8px 25px #9b3e8950;
+}
+
+.foto-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.keterangan {
+    padding: 18px;
+}
+
+.keterangan h3 {
+    color: #e78bc2;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.keterangan p {
+    color: #b9a7bd;
+    font-size: 14px;
+}
+
+/* PESAN */
+.pesan {
+    margin-top: 55px;
+    padding: 35px;
+    background: linear-gradient(135deg, #211127, #30132f);
+    border-radius: 20px;
+    border: 1px solid #66305f;
+    box-shadow: 0 5px 25px #00000060;
+}
+
+.pesan h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #ed91c9;
+    margin-bottom: 20px;
+}
+
+.pesan p {
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #d0bdd2;
+}
+
+/* TOMBOL */
+.kembali {
+    text-align: center;
+    margin: 40px 0 10px;
+}
+
+.tombol {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #8d3b82, #c44d91);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px #a33d8650;
+}
+
+.tombol:hover {
+    background: linear-gradient(135deg, #b84b9d, #e56aa9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px #d84c9a70;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #120a17;
+    color: #a991ab;
+    border-top: 1px solid #35183e;
+}
+
+footer p:first-child {
+    color: #d982b7;
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+
+    .orangtua {
+        flex-direction: column;
+    }
+
+    .orangtua img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .galeri {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .galeri {
+        grid-template-columns: 1fr;
+    }
+
+    .pesan {
+        padding: 22px;
+    }
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Keluarga Saya</h1>
+    <p>Tempat saya menemukan cinta, dukungan, dan rasa syukur ♡</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profile.html">Profil</a>
+    <a href="latarbelakang.html">Latar Belakang</a>
+    <a href="keluarga.html">Keluarga</a>
+</nav>
+
+<div class="container">
+
+    <div class="judul">
+        <h2>Orang Tua Saya</h2>
+        <p>Dua sosok yang sangat berarti dalam hidup saya.</p>
+    </div>
+
+    <div class="orangtua">
+
+        <img src="orangtua.1.jpg"
+             alt="Foto orang tua saya">
+
+        <div>
+            <h3>Cinta dan Doa Mereka</h3>
+
+            <p>
+                Orang tua merupakan sosok yang sangat berarti
+                dalam perjalanan hidup saya. Dari mereka,
+                saya belajar tentang perjuangan, ketulusan,
+                kesabaran, dan kasih sayang. Mereka selalu
+                berusaha memberikan yang terbaik untuk saya
+                dan menjadi salah satu sumber kekuatan saya
+                dalam menjalani kehidupan.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="judul">
+        <h2>Momen Bersama Keluarga</h2>
+        <p>Lima foto kenangan bersama orang-orang tersayang.</p>
+    </div>
+
+    <div class="galeri">
+
+        <div class="foto-card">
+            <img src="keluargakecil1.jpg"
+                 alt="Foto keluarga kecil pertama">
+
+            <div class="keterangan">
+                <h3>Keluarga Kecil Saya</h3>
+                <p>Kebersamaan sederhana yang selalu istimewa.</p>
+            </div>
+        </div>
+
+        <div class="foto-card">
+            <img src="keluargakecil2.jpg"
+                 alt="Foto keluarga kecil kedua">
+
+            <div class="keterangan">
+                <h3>Kenangan Berharga</h3>
+                <p>Momen indah yang ingin selalu saya kenang.</p>
+            </div>
+        </div>
+
+        <div class="foto-card">
+            <img src="keluargabesar1.jpg"
+                 alt="Foto keluarga besar pertama">
+
+            <div class="keterangan">
+                <h3>Keluarga Besar</h3>
+                <p>Bersama keluarga besar yang penuh cerita.</p>
+            </div>
+        </div>
+
+        <div class="foto-card">
+            <img src="keluargabesar2.jpg"
+                 alt="Foto keluarga besar kedua">
+
+            <div class="keterangan">
+                <h3>Kebersamaan</h3>
+                <p>Bahagia karena dapat berkumpul bersama.</p>
+            </div>
+        </div>
+
+        <div class="foto-card">
+            <img src="keluargabesar3.jpg"
+                 alt="Foto keluarga besar ketiga">
+
+            <div class="keterangan">
+                <h3>Kenangan Hangat</h3>
+                <p>Setiap pertemuan menyimpan cerita tersendiri.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pesan">
+
+        <h2>Untuk Keluarga Tercinta ♡</h2>
+
+        <p>
+            Berikut merupakan foto orang tua dan keluarga saya.
+            Mereka adalah orang-orang yang paling saya syukuri
+            kehadirannya dalam hidup saya. Bukan hanya orang tua
+            dari keluarga kecil saya, tetapi juga keluarga besar
+            yang selalu hadir dengan kasih sayang dan dukungan.
+        </p>
+
+        <p>
+            Saya memang tidak terlahir dari keluarga yang kaya,
+            tetapi karena mereka, saya tidak pernah merasa
+            kekurangan. Bukan hanya dalam hal finansial, tetapi
+            juga dalam kasih sayang, perhatian, dan cinta.
+            Mereka selalu berusaha memberikan yang terbaik
+            untuk saya, bahkan ketika keadaan tidak selalu mudah.
+            Saya merasa sangat beruntung bisa tumbuh di tengah
+            keluarga yang mengajarkan saya arti perjuangan,
+            rasa syukur, dan ketulusan. Bagi saya, memiliki
+            mereka adalah salah satu kekayaan terbesar
+            dalam hidup saya.
+        </p>
+
+    </div>
+
+    <div class="kembali">
+        <a href="latarbelakang.html" class="tombol">
+            ← Kembali ke Latar Belakang
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <p>Dengan cinta untuk keluarga saya ♡</p>
+    <p>© 2026 Khoirunnisa Alya Widianti</p>
+</footer>
+
+</body>
+</html>
